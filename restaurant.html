@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant Menu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 20px;
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.92);
+            max-width: 900px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkred;
+        }
+
+        h2 {
+            color: #a33b15;
+        }
+
+        .food-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .food-images img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        hr {
+            border: 1px solid #d6a56d;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>My Restaurant Menu</h1>
+
+    <h2>Introduction</h2>
+    <p>
+        Welcome to Food Paradise! Our restaurant serves delicious,
+        fresh, and tasty food. We offer a variety of starters,
+        main courses, and desserts in a friendly atmosphere.
+    </p>
+
+    <hr>
+
+    <h2>Starters</h2>
+    <ul>
+        <li>Paneer Tikka</li>
+        <li>Spring Rolls</li>
+        <li>French Fries</li>
+        <li>Veg Manchurian</li>
+        <li>Tomato Soup</li>
+    </ul>
+
+    <hr>
+
+    <h2>Main Course</h2>
+    <ol>
+        <li>Shahi Paneer</li>
+        <li>Dal Makhani</li>
+        <li>Chole Bhature</li>
+        <li>Vegetable Biryani</li>
+        <li>Butter Naan</li>
+    </ol>
+
+    <hr>
+
+    <h2>Food Categories</h2>
+    <ul>
+        <li>Indian Food
+            <ul>
+                <li>Shahi Paneer</li>
+                <li>Dal Makhani</li>
+            </ul>
+        </li>
+
+        <li>Chinese Food
+            <ul>
+                <li>Spring Rolls</li>
+                <li>Veg Manchurian</li>
+            </ul>
+        </li>
+
+        <li>Desserts
+            <ul>
+                <li>Ice Cream</li>
+                <li>Chocolate Cake</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Our Delicious Food Gallery</h2>
+
+    <div class="food-images">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+             alt="Fresh and healthy food">
+
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+             alt="Delicious pizza">
+
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+             alt="Burger">
+
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1"
+             alt="Grilled food">
+
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb"
+             alt="Ice cream dessert">
+    </div>
+
+</div>
+
+</body>
+</html>
