@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff8ef;
+            margin: 0;
+        }
+
+        h1 {
+            background-color: #743b22;
+            color: white;
+            padding: 22px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 95%;
+            height: auto;
+        }
+
+        .menu-image {
+            width: 700px;
+        }
+
+        a {
+            color: #743b22;
+        }
+
+        .links {
+            margin: 25px;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <h1>Interactive Restaurant Menu</h1>
+
+    <p>Click on different food items in the image to learn more about them.</p>
+
+    <img
+        class="menu-image"
+        src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=900&q=80"
+        alt="Restaurant food including pizza, fries, sandwiches and other dishes"
+        usemap="#foodmap"
+    >
+
+    <map name="foodmap">
+        <!-- Circle 1: Pizza -->
+        <area shape="circle"
+              coords="230,280,100"
+              href="pizza.html"
+              alt="Pizza"
+              title="Pizza">
+
+        <!-- Circle 2: Burger -->
+        <area shape="circle"
+              coords="620,160,75"
+              href="burger.html"
+              alt="Burger"
+              title="Burger">
+
+        <!-- Rectangle 1: French Fries -->
+        <area shape="rect"
+              coords="30,100,180,230"
+              href="fries.html"
+              alt="French Fries"
+              title="French Fries">
+
+        <!-- Rectangle 2: Menu Card -->
+        <area shape="rect"
+              coords="450,350,650,500"
+              href="menu-card.html"
+              alt="Restaurant Menu Card"
+              title="Menu Card">
+
+        <!-- Polygon 1: Sandwich -->
+        <area shape="poly"
+              coords="300,50,420,70,440,160,350,180,280,120"
+              href="sandwich.html"
+              alt="Sandwich"
+              title="Sandwich">
+
+        <!-- Polygon 2: Cake Slice -->
+        <area shape="poly"
+              coords="470,200,600,230,560,330,430,300"
+              href="cake.html"
+              alt="Cake Slice"
+              title="Cake Slice">
+
+        <!-- Default area: Remaining food area -->
+        <area shape="default"
+              href="other-food.html"
+              alt="Other food items"
+              title="Other food items">
+    </map>
+
+    <div class="links">
+        <p>Explore our restaurant:</p>
+        <a href="pizza.html">Pizza</a> |
+        <a href="burger.html">Burger</a> |
+        <a href="fries.html">French Fries</a> |
+        <a href="menu-card.html">Menu Card</a> |
+        <a href="sandwich.html">Sandwich</a> |
+        <a href="cake.html">Cake Slice</a> |
+        <a href="other-food.html">Other Food</a>
+    </div>
+
+    <p><a href="#top">Back to Top</a></p>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f7ff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            background: #234e70;
+            color: white;
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .map-image {
+            width: 900px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <h1>World Map Explorer</h1>
+    <p>Click a country on the world map to explore it.</p>
+
+    <img
+        class="map-image"
+        src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+        alt="World map with clickable countries"
+        usemap="#worldmap"
+        width="900"
+        height="450">
+
+    <map name="worldmap">
+        <area shape="circle"
+              coords="650,260,35"
+              href="https://en.wikipedia.org/wiki/India"
+              alt="India"
+              title="India"
+              target="_blank">
+
+        <area shape="rect"
+              coords="700,350,790,410"
+              href="https://en.wikipedia.org/wiki/Australia"
+              alt="Australia"
+              title="Australia"
+              target="_blank">
+
+        <area shape="poly"
+              coords="120,130,220,120,250,160,210,190,140,175"
+              href="https://en.wikipedia.org/wiki/United_States"
+              alt="United States"
+              title="United States"
+              target="_blank">
+
+        <area shape="poly"
+              coords="270,270,320,260,350,300,330,360,290,340"
+              href="https://en.wikipedia.org/wiki/Brazil"
+              alt="Brazil"
+              title="Brazil"
+              target="_blank">
+
+        <area shape="rect"
+              coords="590,160,700,220"
+              href="https://en.wikipedia.org/wiki/China"
+              alt="China"
+              title="China"
+              target="_blank">
+
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/World"
+              alt="Other areas of the world"
+              title="Explore the world"
+              target="_blank">
+    </map>
+
+    <h2>Explore the World</h2>
+    <p>
+        Countries included: India, Australia, United States, Brazil and China.
+        Click an area to open its information page in a new tab.
+    </p>
+
+    <p><a href="#top">Back to Top</a></p>
+
+</body>
+</html>

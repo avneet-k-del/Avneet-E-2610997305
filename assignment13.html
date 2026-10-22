@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven - Book Registration & Order Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5ff;
+            margin: 0;
+            padding: 25px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ccd3e0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #263f70;
+        }
+
+        h2 {
+            color: #263f70;
+            border-bottom: 1px solid #ccd5e8;
+            padding-bottom: 8px;
+            margin-top: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 6px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 11px;
+            box-sizing: border-box;
+            border: 1px solid #aab9d4;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .option {
+            display: inline-block;
+            margin: 8px 15px 8px 0;
+            font-weight: normal;
+        }
+
+        .option input {
+            width: auto;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 12px 22px;
+            margin: 20px 10px 0 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .submit {
+            background-color: #263f70;
+            color: white;
+        }
+
+        .reset {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Readers' Haven</h1>
+    <p>Register your details and order your favourite books online.</p>
+
+    <form action="#" method="post" target="_blank"
+          enctype="multipart/form-data">
+
+        <input type="hidden" name="formName"
+               value="Readers Haven Book Order">
+
+        <h2>Customer Information</h2>
+
+        <label for="customerName">Customer Name *</label>
+        <input type="text" id="customerName" name="customerName"
+               placeholder="Enter your full name" required>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email address" required>
+
+        <label for="mobile">Mobile Number *</label>
+        <input type="tel" id="mobile" name="mobile"
+               placeholder="Enter your mobile number"
+               pattern="[0-9]{10}" maxlength="10" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age"
+               placeholder="Enter your age" min="1" max="120">
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password"
+               placeholder="Create a password" required>
+
+        <h2>Book Preferences</h2>
+
+        <label for="category">Favourite Book Category *</label>
+        <select id="category" name="category" required>
+            <option value="">-- Select a category --</option>
+            <option>Fiction</option>
+            <option>Science</option>
+            <option>History</option>
+            <option>Children's Books</option>
+        </select>
+
+        <label for="bookTitle">Book Title *</label>
+        <input type="text" id="bookTitle" name="bookTitle"
+               placeholder="Enter the book title" required>
+
+        <label for="quantity">Quantity *</label>
+        <input type="number" id="quantity" name="quantity"
+               min="1" value="1" required>
+
+        <label>Preferred Payment Method *</label>
+        <label class="option">
+            <input type="radio" name="payment" value="Cash on Delivery" required>
+            Cash on Delivery
+        </label>
+        <label class="option">
+            <input type="radio" name="payment" value="Online Payment">
+            Online Payment
+        </label>
+
+        <label>Additional Services</label>
+        <label class="option">
+            <input type="checkbox" name="services" value="Gift Wrapping">
+            Gift Wrapping
+        </label>
+        <label class="option">
+            <input type="checkbox" name="services" value="Bookmark">
+            Bookmark
+        </label>
+        <label class="option">
+            <input type="checkbox" name="services" value="Express Delivery">
+            Express Delivery
+        </label>
+        <label class="option">
+            <input type="checkbox" name="services" value="Greeting Card">
+            Greeting Card
+        </label>
+
+        <h2>Delivery Information</h2>
+
+        <label for="deliveryDate">Delivery Date *</label>
+        <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+        <label for="deliveryTime">Preferred Delivery Time</label>
+        <input type="time" id="deliveryTime" name="deliveryTime">
+
+        <label for="address">Delivery Address *</label>
+        <textarea id="address" name="address" rows="4"
+                  placeholder="Enter your complete delivery address"
+                  required></textarea>
+
+        <label for="instructions">Special Instructions</label>
+        <textarea id="instructions" name="instructions" rows="3"
+                  placeholder="Any special delivery instructions?"></textarea>
+
+        <label for="document">Upload Reference Image or Document</label>
+        <input type="file" id="document" name="document"
+               accept="image/*,.pdf,.doc,.docx">
+
+        <p>* Required fields</p>
+
+        <button type="submit" class="submit">Place Book Order</button>
+        <button type="reset" class="reset">Reset Form</button>
+
+    </form>
+</div>
+</body>
+</html>

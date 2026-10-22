@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Course Registration</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4ff;
+    margin: 0;
+    padding: 25px;
+}
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #c5d4e8;
+}
+h1 {
+    text-align: center;
+    color: #234e70;
+}
+h3 {
+    color: #234e70;
+    border-bottom: 1px solid #ccd9e8;
+    padding-bottom: 8px;
+}
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]),
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    border: 1px solid #9aafc5;
+    border-radius: 5px;
+}
+.options label {
+    display: inline-block;
+    margin: 10px 14px 0 0;
+    font-weight: normal;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+button, input[type="submit"], input[type="reset"] {
+    padding: 11px 22px;
+    margin: 18px 8px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"] {
+    background: #234e70;
+    color: white;
+}
+input[type="reset"] {
+    background: #dddddd;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>Online Course Registration</h1>
+<p>Please fill in your details to register for an online course.</p>
+
+<form action="#" method="post" target="_self"
+      enctype="multipart/form-data">
+
+<input type="hidden" name="formName"
+       value="Online Course Registration">
+
+<h3>Personal Information</h3>
+
+<label for="studentName">Student Name *</label>
+<input type="text" id="studentName" name="studentName"
+       placeholder="Enter your full name" required>
+
+<label for="email">Email Address *</label>
+<input type="email" id="email" name="email"
+       placeholder="Enter your email" required>
+
+<label for="mobile">Mobile Number *</label>
+<input type="tel" id="mobile" name="mobile"
+       placeholder="Enter mobile number" required>
+
+<label for="age">Age</label>
+<input type="number" id="age" name="age"
+       min="1" max="100" placeholder="Enter your age">
+
+<label for="password">Password *</label>
+<input type="password" id="password" name="password"
+       placeholder="Create a password" required>
+
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob">
+
+<label>Gender *</label>
+<div class="options">
+<label><input type="radio" name="gender" value="Male" required> Male</label>
+<label><input type="radio" name="gender" value="Female"> Female</label>
+<label><input type="radio" name="gender" value="Other"> Other</label>
+</div>
+
+<h3>Course Preferences</h3>
+
+<label for="course">Select Course *</label>
+<select id="course" name="course" required>
+<option value="">-- Select a course --</option>
+<option value="Web Development">Web Development</option>
+<option value="Python Programming">Python Programming</option>
+<option value="Data Analytics">Data Analytics</option>
+<option value="Digital Marketing">Digital Marketing</option>
+</select>
+
+<label>Skills (select all that apply)</label>
+<div class="options">
+<label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+<label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+<label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+<label><input type="checkbox" name="skills" value="Python"> Python</label>
+</div>
+
+<label for="classTime">Preferred Class Time</label>
+<input type="time" id="classTime" name="classTime">
+
+<h3>Additional Information</h3>
+
+<label for="address">Address / Additional Information</label>
+<textarea id="address" name="address" rows="4"
+          placeholder="Enter your address or additional details"></textarea>
+
+<label for="document">Upload Document or Photograph</label>
+<input type="file" id="document" name="document"
+       accept="image/*,.pdf,.doc,.docx">
+
+<p>* Required fields</p>
+
+<input type="submit" value="Submit Registration">
+<input type="reset" value="Reset Form">
+
+</form>
+</div>
+</body>
+</html>
